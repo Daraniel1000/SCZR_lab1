@@ -1,1 +1,4 @@
 # SCZR_lab1
+Proszę stworzyć własną dwuwątkową aplikację realizującą następujące funkcje:
+1.Wątek 1 odbiera z klawiatury komunikaty (kończone znakiem nowej linii) i przekazuje je do wątku 2.
+2.Wątek 2 odbiera kolejne komunikaty i wysyła je do zadanego komputera (najlepiej stacjiroboczej, na której realizowane jest ćwiczenie) do programu “netcat” (nc), nasłuchującego na porcie TCP 10000. Adres komputera powinien być specyfikowany przez parametr w linii poleceń. Program powinien umożliwiać symulowanie opóźnienia komunikacji przez sieć, pozwalając określić przez parametr linii poleceń ile sekund ma zajmować transmisja każdego komunikatu.Aplikacja powinna być napisana tak, żeby przy braku komunikatów do nadania wątek nadający nie zajmował czasu procesora, a zarazem żeby jak najszybciej rozpoczynał transmisję otrzymanego komunikatu.
